@@ -1,13 +1,25 @@
 /* ============ COMMON STYLES =========== */
-body {
-  background-color: #fff;
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -27,15 +39,42 @@ p {
   letter-spacing: 0.02em;
 }
 
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+}
+
 /* ============ /COMMON STYLES =========== */
 
 /* ============ HEADER STYLES + LOGO FOTTER =========== */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .page-addres-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.page-addres-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
 }
 
 .page-addres-a:hover,
@@ -48,10 +87,10 @@ p {
 }
 
 .page-addres {
-  text-decoration: none;
   font-style: normal;
+  margin-left: auto;
+  display: flex;
 }
-
 .page-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -60,6 +99,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .page-logo-color {
@@ -67,6 +108,8 @@ p {
 }
 
 .menu-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -82,6 +125,13 @@ p {
   letter-spacing: 0.02em;
   color: #404bbf;
 }
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 /* ============ /HEADER STYLES + LOGO FOTTER =========== */
 
 /* ============ MAIN STYLES ============= */
