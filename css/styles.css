@@ -1,4 +1,18 @@
 /* ============ COMMON STYLES =========== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -15,11 +29,16 @@ p {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ul,
 ol {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
 a {
@@ -138,15 +157,24 @@ body {
 
 .order-main {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .order-button {
+  display: block;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
 }
 
 .order-button:hover,
@@ -160,6 +188,11 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
 }
 
 .benefits-list-title {
@@ -186,6 +219,7 @@ body {
 
 .team-list-items {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-title {
@@ -198,16 +232,22 @@ body {
   text-transform: capitalize;
 }
 
+.benefits-main {
+  margin: 120px 0;
+}
+
 .team-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 
 .main-title {
+  max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
